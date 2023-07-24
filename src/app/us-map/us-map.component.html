@@ -1,0 +1,19 @@
+
+<div class="container ">
+  <h1 class="title text-center pt-5">U.S. COVID Risk Tracker</h1>
+  <div class="selectItem"> <mat-form-field appearance="outline" class="pt-3">
+    <mat-label>METRIC</mat-label>
+    <mat-select (selectionChange)="changeRisk($event)"  [value]=defaultValue>
+
+      <mat-option  *ngFor="let item of selectList" [value]="item.id">{{item.description}}</mat-option>
+
+    </mat-select>
+  </mat-form-field></div>
+
+  <div #mapContainer class="map-container pb-5"></div>
+  <div class="leg">
+    <p >Low <span class="ms-1">risk</span></p>
+    <div #legendContainer ></div>
+    <p>Severe <span class="ms-1">risk</span></p>
+  </div>
+</div>

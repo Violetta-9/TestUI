@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.title{
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.selectItem{
+  z-index: 2;
+}
+.map-container {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  top:-80px
+}
+.leg {
+  width: 150px;
+  height: 40px;
+  position: relative;
+  top:-30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+p{
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+
+p span {
+  font-weight: normal;
+
+}
+
+
+
